@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #007bff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  padding: 0.5rem 1rem;
+  background-color: #0056b3;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: #004494;
+}
+
+/* Hero Section Styles */
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.search-bar {
+  margin-top: 1.5rem;
+}
+
+.search-bar input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  width: 60%;
+  border: none;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.search-bar button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #0056b3;
+  color: white;
+  border-radius: 4px;
+}
+
+.search-bar button:hover {
+  background-color: #004494;
+}
+
+/* Forms Styles (Login/Signup) */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.form-group button:hover {
+  background-color: #0056b3;
+}
+
+/* Course List Styles */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.course-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.course-card button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.course-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.dashboard-sidebar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.dashboard-sidebar h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.dashboard-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard-sidebar ul li {
+  padding: 0.5rem 0;
+}
+
+.dashboard-sidebar ul li a {
+  color: #007bff;
+}
+
+.dashboard-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Page Styles */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.profile-container h2 {
+  margin-bottom: 2rem;
+}
+
+.profile-container .enrolled-courses {
+  width: 100%;
+  max-width: 800px;
+}
+
+.profile-container .enrolled-courses h3 {
+  margin-bottom: 1rem;
+}
+
+.profile-container .enrolled-courses ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-container .enrolled-courses ul li {
+  padding: 1rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

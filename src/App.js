@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { AuthProvider } from './context/AuthContext'
+import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
+import SignupPage from './pages/SignupPage'
+import ProfilePage from './pages/ProfilePage'
+import AdminDashboardPage from './pages/AdminDashboardPage'
+import TeacherDashboardPage from './pages/TeacherDashboardPage'
+import CourseDetailPage from './pages/CourseDetailPage'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AuthProvider>
+      <Router>
+        <Switch>
+          <Route path='/' exact component={HomePage} />
+          <Route path='/login' component={LoginPage} />
+          <Route path='/signup' component={SignupPage} />
+          <Route path='/profile' component={ProfilePage} />
+          <Route path='/admin/dashboard' component={AdminDashboardPage} />
+          <Route path='/teacher/dashboard' component={TeacherDashboardPage} />
+          <Route path='/courses/:courseId' component={CourseDetailPage} />
+        </Switch>
+      </Router>
+    </AuthProvider>
+  )
 }
 
-export default App;
+export default App
