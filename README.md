@@ -56,31 +56,6 @@ bash
 
     Access the app: Open your browser and go to http://localhost:3000.
 
-📂 Directory Structure
-
-Here is an overview of the directory structure:
-
-bash
-
-/coursemaster_frontend
-├── /public
-│ ├── index.html
-│ └── favicon.ico
-├── /src
-│ ├── /assets # Images, CSS, and other assets
-│ ├── /components # Reusable components
-│ ├── /pages # Main application pages (Home, Login, etc.)
-│ ├── /context # Context API for managing global state (e.g., AuthContext)
-│ ├── /hooks # Custom React hooks
-│ ├── /services # Services for interacting with the API
-│ ├── /utils # Helper functions
-│ ├── App.js # Main application file
-│ ├── index.js # Entry point for React
-│ └── setupTests.js # For setting up tests
-├── .env # Environment variables
-├── package.json # Project metadata and dependencies
-└── README.md # Project documentation
-
 📜 Available Scripts
 
 In the project directory, you can run:
