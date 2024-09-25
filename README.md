@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+🚀 Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CourseMaster is a web application designed to simplify course management for teachers and students. It provides functionalities like course creation, student enrollment, and dashboards for both teachers and students. The frontend is built with React and communicates with a Node.js/Express backend through RESTful APIs.
+🛠️ Technologies Used
 
-## Available Scripts
+    React (JavaScript library for building user interfaces)
+    Axios (for making HTTP requests to the backend API)
+    React Router (for managing application routing)
+    CSS (for custom styles)
+
+✨ Features
+
+    Authentication: Login and signup functionality for teachers, students, and admins.
+    Dashboard:
+        Teachers: Create and manage courses, view enrolled students.
+        Students: View available courses, enroll in courses, track course progress.
+    Search Functionality: Users can search for courses.
+    Responsive Design: Built with mobile-first responsiveness in mind.
+
+💻 Installation and Setup
+
+To run this project locally, follow these steps:
+
+    Clone the repository:
+
+    bash
+
+git clone https://github.com/Aymenkenway/coursemaster_frontend.git
+
+Navigate to the project directory:
+
+bash
+
+cd coursemaster_frontend
+
+Install dependencies:
+
+bash
+
+npm install
+
+Set up environment variables:
+
+    Create a .env file in the root directory.
+    Add your environment variables, including the backend API URL:
+
+    bash
+
+    REACT_APP_API_URL=<your_backend_api_url>
+
+Run the application:
+
+bash
+
+    npm start
+
+    Access the app: Open your browser and go to http://localhost:3000.
+
+📂 Directory Structure
+
+Here is an overview of the directory structure:
+
+bash
+
+/coursemaster_frontend
+├── /public
+│ ├── index.html
+│ └── favicon.ico
+├── /src
+│ ├── /assets # Images, CSS, and other assets
+│ ├── /components # Reusable components
+│ ├── /pages # Main application pages (Home, Login, etc.)
+│ ├── /context # Context API for managing global state (e.g., AuthContext)
+│ ├── /hooks # Custom React hooks
+│ ├── /services # Services for interacting with the API
+│ ├── /utils # Helper functions
+│ ├── App.js # Main application file
+│ ├── index.js # Entry point for React
+│ └── setupTests.js # For setting up tests
+├── .env # Environment variables
+├── package.json # Project metadata and dependencies
+└── README.md # Project documentation
+
+📜 Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+    npm start: Runs the app in development mode. Open http://localhost:3000 to view it in the browser.
+    npm test: Launches the test runner in the interactive watch mode.
+    npm run build: Builds the app for production to the build folder.
+    npm run eject: If you need to customize the configuration.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🌐 API Integration
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The frontend communicates with the backend through RESTful API calls. You can set the backend URL by specifying the REACT_APP_API_URL in the .env file.
 
-### `npm test`
+    Example API endpoints:
+        /api/login: For user login
+        /api/courses: Fetch available courses
+        /api/students: Manage student data
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Axios is used to make HTTP requests to these endpoints.
+🤝 Contributing
 
-### `npm run build`
+Feel free to submit issues, fork the repository, and send pull requests. Contributions to the project are highly appreciated!
+Steps to Contribute:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Fork the repository.
+    Create your feature branch (git checkout -b feature/new-feature).
+    Commit your changes (git commit -m 'Add new feature').
+    Push to the branch (git push origin feature/new-feature).
+    Open a Pull Request.
